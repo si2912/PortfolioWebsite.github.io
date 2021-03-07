@@ -1,0 +1,263 @@
+//Desktop & Tablet (Ipad Pro)
+@media only screen and (max-width: 1100px){  
+    // banner
+    .banner{
+        .container{
+            .banner__introduce{
+                .content{
+                    top: 5%;
+                    p{
+                        margin-bottom: 40px;
+                    }
+                    .icon-socials{
+                        margin-top: 60px;
+                    }
+                }
+            }
+            .banner__img{
+                img{
+                    width: 80%;
+                }
+            }
+        }
+    }
+
+    // about
+    .about{
+        .container{
+            .about__content{
+                .content{
+                    padding-top: 70px;
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 900px){  
+    // banner
+    .banner{
+        margin: 50px 0;
+    }
+}
+
+
+// Ipad
+@media only screen and (max-width: 768px){
+    // header
+    .header{
+        position: relative;
+        .container{
+            .header__nav{
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                background-color: $white;
+                top: 100%;
+                right: 0;
+                width: 70%;
+                height: 500px;
+                justify-content: space-between;
+                background: white;
+                box-shadow: 2px 8px 10px $gray;
+                box-sizing: border-box;
+                transition: .5s;
+                &-item{
+                    padding: 25px;
+                    &:hover{
+                        background-color: $blue;
+                        transition: .5s;
+                        a{
+                            color: $white;
+                        }
+                    }
+                    a{
+                        padding-right: 80%;
+                        font-size: $sizeXM;
+                    }
+                    &.active{
+                        background-color: $blue;
+                        border-bottom: none;
+                        a{
+                            color: $white;
+                        }
+                    }
+                }
+                &.show{
+                    display: flex;
+                    animation: rightToLeft .5s forwards;
+                }
+            }
+            .header__bars{
+                display: flex;
+            }
+        }
+    }
+
+    // banner
+    .banner{
+        .container{
+            .banner__introduce{
+                .content{
+                    top: 0;
+                    p{
+                        font-size: 40px;
+                        margin-bottom: 30px;
+                    }
+                    a{
+                        padding: 15px 20px;
+                        font-size: $sizeX;
+                    }
+                    .icon-socials{
+                        margin-top: 40px;
+                    }
+                }
+            }
+        }
+    }
+
+    // about
+    .about{
+        .container{
+            .about__content{
+                .content{
+                    margin-left: 40px;
+                }
+            }
+        }
+    }
+
+    // skills
+    .skills{
+        .container{  
+            .skills__content{
+                .right{
+                    img{
+                        width: 80%;
+                        height: 250px;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+@media only screen and (max-width: 600px){
+    // banner
+    .banner{
+        .container{
+            flex-direction: column;
+            flex-wrap: wrap;
+            .banner__introduce{
+                z-index: 1;
+                height: 300px;
+                width: 100%;
+                .content{
+                    width: 100%;
+                }
+            }
+            .banner__img{
+                width: 100%;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    // about
+    .about{
+        .container{
+            .about__content{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                img{
+                    width: 100%;
+                }
+                .content{
+                    padding-top: 20px;
+                    margin-left: 0;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    // skills
+    .skills{
+        .container{  
+            .skills__content{
+                flex-direction: column;
+                .left{
+                    width: 100%;
+                    .skills-box{
+                        .box{
+                            width: 100%;
+                        }
+                    }
+                }
+                .right{
+                    width: 100%;
+                    position: inherit;
+                    img{
+                        position: inherit;
+                        width: 100%;
+                        height: 300px;
+                        transform: translate(0, 0);
+                    }
+                }
+            }
+        }
+    }
+    
+    // work
+    .work{
+        .container{
+            .work__content{
+                .box{
+                    width: 48%;
+                }
+            }
+        }
+    }
+
+}
+
+
+// Mobiles
+@media only screen and (max-width: 375px){
+    // work
+    .work{
+        .container{
+            .work__content{
+                .box{
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    // contact
+    .contact{
+        .container{
+            .contact__form{
+                form{
+                    input{
+                        width: 250px;
+                    }
+                    textarea{        
+                        width: 250px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+
+
